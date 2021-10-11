@@ -1,0 +1,68 @@
+/* Code-Input Compability */
+/* By WebCoder49 */
+/* First Published on CSS-Tricks.com */
+
+code-input {
+  /* Allow other elems to be inside */
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+}
+
+.editor-textarea, .editor-pre {
+  /* Both elements need the same text and space styling so they are directly on top of each other */
+  margin: 0.5em 0em!important;
+  padding: 10px!important;
+  border: 0;
+  width: calc(100% - 23px)!important;
+  height: calc(100% - 32px)!important;
+}
+.editor-textarea, .editor-pre, .editor-pre * {
+  /* Also add text styles to highlighing tokens */
+  font-size: 11pt!important;
+  font-family: monospace;
+  line-height: 15pt!important;
+}
+
+.editor-textarea, .editor-pre {
+  /* In the same place */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.editor-textarea:focus {
+    border: none;
+}
+
+
+/* Move the textarea in front of the result */
+
+.editor-textarea {
+  z-index: 1;
+}
+.editor-pre {
+  z-index: 0;
+}
+
+
+/* Make textarea almost completely transparent */
+
+.editor-textarea {
+  color: transparent;
+  background: transparent;
+  caret-color: white; /* Or choose your favourite color */
+}
+
+/* Can be scrolled */
+.editor-textarea, .editor-pre {
+  overflow: auto;
+  white-space: nowrap; /* Allows textarea to scroll horizontally */
+}
+
+/* No resize on textarea */
+.editor-textarea {
+  resize: none;
+}

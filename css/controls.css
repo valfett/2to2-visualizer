@@ -1,0 +1,73 @@
+.varContainer {
+    background-color: rgb(48, 48, 48);
+    padding: 0.5em 0.5em;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.unset-default {
+    all: unset;
+}
+.slider {
+    width: 100%;
+    max-width: 45em;
+}
+#controls-section .dropdown {
+    display: flex;
+    position: relative;
+    margin-right: 0.3em;
+}
+#controls-section .dropdown-content {
+    background-color: rgb(39, 37, 37);
+    width: 7em;
+    height: 5em;
+}
+.knob-container {
+    display: flex;
+    overflow: hidden;
+}
+.knob-label {
+    margin-right: auto
+}
+#controls-section .dropdown-content > * {
+    /* width: 5em; */
+    padding: 2px;
+} 
+.knob-input {
+    margin-left: 2em;
+    margin-right: 0;
+    width: 50%;
+}
+.c1 {
+    position: relative;
+    margin-bottom: 0.7em;
+}
+.c2 {
+    display: flex; 
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    margin: 0.2em 0.4em;
+    color: red;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.new-var-btn {
+    margin-top: 0.3em;
+    background-color: rgb(12, 208, 45);
+    padding: 0.2em;
+    cursor: pointer;
+}
+.bi-plus { 
+    margin-left: 0;
+    font-size: 1.2em;
+}
+[name='var-name'] {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: whitesmoke
+}
+.slider-num {
+    width: 5em;
+    font-size: 1.2em;
+}

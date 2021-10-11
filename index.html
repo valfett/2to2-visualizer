@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive visualizer</title>
+
+    <link rel="stylesheet" href="css/controls.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="third_party/prism.css">
+    <link rel="stylesheet" href="third_party/editor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="node_modules/stats.js/build/stats.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+</head>
+<body>
+
+    <div class="split">
+        <div id="sidebar">
+            <div class="top">
+                <div class="navbar">
+                    <div class="nav-item active" id="main-code-section-tab">Code</div>
+                    <div class="nav-item" id="controls-section-tab">Controls</div>
+                </div>
+                <button type="button" id="run-btn">Save and Run</button>
+            </div>
+
+            <div id="main-code-section"></div>
+
+            <div id="controls-section">
+                <div class="var-area"></div>
+                <button class="new-var-btn">
+                    <i class="bi bi-plus"></i>New variable
+                </button>
+            </div>
+
+        </div>
+        <div id="main">
+            <canvas id="canvas"></canvas>
+            <div id="pos-box">
+                0, 0
+            </div>
+        </div>
+    </div>
+
+    <script src="js/controls.js"></script>
+    <script src="third_party/prism.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script src="third_party/editor.js"></script>
+</body>
+</html>

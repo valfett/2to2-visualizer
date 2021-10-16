@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "split.js": "^1.6.4",
-    "stats.js": "^0.17.0",
-    "three": "^0.132.2"
-  }
-}

@@ -1,4 +1,4 @@
-import * as THREE from '/node_modules/three/build/three.module.js'
+import * as THREE from '/third_party/three.module.js'
 
 async function main(){
 
@@ -83,11 +83,12 @@ async function main(){
     
     // fps counter
     let stats = new Stats()
-    stats.showPanel(0)
-    document.body.append(stats.dom)
-    stats.dom.style.left = ""
-    stats.dom.style.right = "0px"  
-    stats.dom.setAttribute("class", "stats")
+    console.log(stats)
+    const statsDom = stats.domElement
+    document.body.append(statsDom)
+    statsDom.style.left = ""
+    statsDom.style.right = "0px"  
+    statsDom.setAttribute("class", "stats")
 
     //navbar
     const navbar = document.querySelector(".navbar")

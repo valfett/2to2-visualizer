@@ -18481,7 +18481,6 @@ function WebGLProgram( renderer, cacheKey, parameters, bindingStates ) {
 			const vertexErrors = getShaderErrors( gl, glVertexShader, 'vertex' );
 			const fragmentErrors = getShaderErrors( gl, glFragmentShader, 'fragment' );
 
-			throw new Error(fragmentErrors);
 
 			console.error(
 				'THREE.WebGLProgram: Shader Error ' + gl.getError() + ' - ' +
@@ -18490,6 +18489,8 @@ function WebGLProgram( renderer, cacheKey, parameters, bindingStates ) {
 				vertexErrors + '\n' +
 				fragmentErrors
 			);
+
+			throw new Error(fragmentErrors);
 
 		} else if ( programLog !== '' ) {
 

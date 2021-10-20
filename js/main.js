@@ -273,7 +273,11 @@ async function main(){
     }
 
     function handleShaderErrors(err) {
-        // console.log(err)
+        console.log(err)
+        // if (!err) {
+        //     clearErrorsUI()
+        //     return 
+        // }
         let errors = err.match(/ERROR: .*/g)
         let errObject = {}
         for (let error of errors) {

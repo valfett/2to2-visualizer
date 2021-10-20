@@ -51,7 +51,7 @@ vec2 sinC(vec2 z) {
 
 const int maxIterations = 128;
 
-vec3 coloring(float n, vec2 z, vec2 c) { // not actually used
+vec3 coloring(float n, vec2 z) { // not actually used
     return vec3(0);
 }
 

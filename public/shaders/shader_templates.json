@@ -1,0 +1,43 @@
+{
+    "func": {
+        "mandelbrot": {
+            "name": "Mandelbrot set", 
+            "className": "mandelbrot"
+        }, 
+        "burningShip": {
+            "name": "Burning ship fractal", 
+            "className": "burningShip"
+        }, 
+        "identity": {
+            "name": "Identity function", 
+            "className": "identity"
+        },
+        "iterativeFunc1": {
+            "name": "Weird function", 
+            "className": "iterativeFunc1"
+        }, 
+        "sinZ": {
+            "name": "sin(z)", 
+            "className": "sinZ"
+        }
+    }, 
+
+    "coloring": {
+        "domainColoring1": {
+            "name": "Domain coloring 1", 
+            "className": "domainColoring1"
+        }, 
+        "iterationColoringBasic": {
+            "name": "Basic iteration coloring", 
+            "className": "iterationColoringBasic"
+        }, 
+        "iterationColoring1": {
+            "name": "Iteration coloring 1", 
+            "className": "iterationColoring1"
+        }, 
+        "domain-iterationColoring": {
+            "name": "Domain/iteration coloring", 
+            "className": "domain-iterationColoring"
+        }
+    }
+}

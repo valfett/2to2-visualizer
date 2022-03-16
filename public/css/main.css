@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    overflow: scroll;
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.gutter {
+    background-color: rgb(61, 61, 61);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.gutter.gutter-horizontal {
+    cursor: col-resize;
+}
+#main{
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+/* #main:first-child {
+    left: inherit;
+} */
+
+#sidebar{
+    background-color: rgb(0, 0, 0);
+    overflow: scroll;
+    position: relative;
+}
+#main-code-section{
+    height: 93%;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 3em;
+}
+
+.errors-section {
+    margin: 0.4em 0;
+    background-color: rgba(226, 226, 226, 0.727);
+    padding: 0.5em;
+    border-top: 0.2px solid red;
+    border-bottom: 0.2px solid red;
+}
+.errors-section h1 {
+    color: rgb(190, 17, 17);
+}
+.error-container {
+    margin: 0.5em 0;
+}
+.error-msg {
+    background-color: rgb(247, 182, 182);
+    color: rgb(216, 0, 0);
+    border: 0.3px solid rgb(255, 81, 81);
+    padding: 0.2em;
+}
+.error-line-code {
+    padding: 0.3em;
+    margin: 0;
+}
+
+h1{
+    font-size: 1.5em;
+    margin: 0;
+    color: rgb(221, 221, 221);
+}
+.editor{
+    overflow: scroll;
+    height: 42%;
+    border-top: rgb(139, 136, 136) 1px solid;
+    border-bottom: rgb(139, 136, 136) 1px solid;
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 100%; */
+}
+
+.top{
+    position: fixed;
+    z-index: 1000;
+    width: inherit;
+    background-color: rgb(55, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0.5em; */
+    margin: 0 0 0.8em 0;
+    height: 3em;
+}
+.navbar{
+    color: white;
+    width: 70%;
+    display: flex;
+    margin-right: auto;
+    height: 100%;
+}
+.nav-item{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-item:hover{
+    background-color: rgb(78, 112, 112);
+}
+#run-btn{
+    position: relative;
+    right: 0;
+    background-color: rgb(64, 185, 64);
+    /* width: 10em;
+    height: 2em; */
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    border-radius: 2em;
+    height: 80%;
+    margin-right: 1em;
+}
+#controls-section{
+    color: white;
+}
+#pos-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2em;
+    width: 6em;
+    height: 2em;
+    z-index: 10;
+    background-color: rgb(133, 133, 133);
+    color: rgb(0, 0, 0);
+}
+
+* {
+  scrollbar-width: none;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  margin-right: 0.3em;
+  margin-left: 0.4em;
+}
+.dropdown-content {
+  width: 7em;
+  display: none;
+  position: absolute;
+  top: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  z-index: 20;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #f8f8f8;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(119, 119, 119);
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #242727;
+}
+#controls-section {
+    position: relative;
+    top: 3em;
+}
+.over-editor {
+    display: flex;
+    margin-top: 0.5em;
+    height: 1.8em;
+}
+.over-editor button {
+    background-color: #2d2d2d;
+    color: white;
+}
+.over-editor > button:hover {
+    background-color: rgb(55, 82, 82);
+}
